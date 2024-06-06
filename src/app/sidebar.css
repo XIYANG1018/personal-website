@@ -1,0 +1,70 @@
+/* src/app/sidebar.css */
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Jost");
+.sidebar {
+    width: 30%;
+    height: 100vh;
+    background-color: #ffeaa7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+/* .person-name {
+    font-family: 'Lobster', cursive;
+    font-size: 6rem;
+    color: #e41c6f;
+    margin-bottom: 5rem;
+    letter-spacing: 0.5rem;
+} */
+
+.greeting {
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    color: #e41c6f;
+}
+
+.person-img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    box-shadow: 8px 3px 10px 2px #00000040;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.person-title {
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0 1rem;
+    margin: 3rem;
+}
+
+.navbar-link {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    background-color: #68ecc0;
+    border: .3rem solid #333;
+    padding: .4rem 1rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.button-container {
+    margin: 4rem;
+    font-size: 2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+.sidebar {
+    width: 100%;
+    /* 其他样式 */
+}
+}

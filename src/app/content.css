@@ -1,0 +1,27 @@
+/* src/app/content.css */
+
+.content {
+    margin-left: 30%; /* 留出侧边栏的宽度 */
+    padding: 20px;
+    width: 70%;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  /* 响应式设计 */
+  @media screen and (max-width: 768px) {
+    .content {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
