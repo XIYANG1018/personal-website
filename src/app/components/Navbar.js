@@ -1,7 +1,6 @@
 "use client"
-import Link from "next/link";
 import React, { useCallback, useState } from "react";
-import NavLink from "./NavLink";
+
 
 // const navLinks = [
 //     {
