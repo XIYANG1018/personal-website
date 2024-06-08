@@ -71,9 +71,9 @@ const About = () => {
                 About Me
             </h2>
             <p className='text-base md:text-xl'>
-              I am a full stack developer with a passion for developing seamless back-end application and
+              I am a full stack developer with a passion for developing seamless, scalable,
               interactive and responsive web applications. I am currently pursuing Computer Science master at Northeastern Seattle campus and will be graduating Fall 2025/Spring 2026 with an overall 4.0/4.0 GPA.
-               I am a<span className='text-custom-pink font-semibold'>quick learner </span> and <span className='text-custom-pink font-semibold'>team player</span>. I am actively searching an internship that I can learn from and contribute to.
+               I am a <span className='text-custom-pink font-semibold'>quick learner </span> and <span className='text-custom-pink font-semibold'>team player</span>. I am actively searching an internship that I can learn from and contribute to.
             </p>
 
             <div className='flex flex-row mt-8 md:text-xl'>
