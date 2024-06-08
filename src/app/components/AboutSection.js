@@ -53,7 +53,7 @@ const About = () => {
     })
   }
   return (
-    <section className='bg-custom-yellow pt-20'>
+    <section className='bg-[#eef] pt-20'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
           <div className='flex justify-center items-center'>
             <Image 
