@@ -2,32 +2,16 @@
 import React from 'react';
 import '../sidebar.css'
 import { TypeAnimation } from 'react-type-animation';
+import Navbar from './Navbar';
 
 
 
 const Sidebar = () => {
   return (
     <section>
-        {/* <div className="grid grid-cols-1 lg:grid-cols-12">
-            <div className="col-span-7 place-self-center">
-                <h1 className="greeting">
-                    Hey there 👋
-                </h1>
-                <h1 className="person-name">
-                    Xi Yang
-                </h1>
-                <img src="images/xi-yang.jpg" alt="Xi Yang" className="person-img"/>
-                <h3 className="person-title">Software Engineer</h3>
-                <a href="#section1" className="navbar-link">About</a>
-                <a href="#section2" className="navbar-link">Projects</a>
-                <a href="#section3" className="navbar-link">fun facts</a>
-                <a href="#section4" className="navbar-link">Contact</a>
-                <a href="#" className="navbar-link">Resume</a>
 
-            </div>
-        </div> */}
-
-        <div className="sidebar">
+        <div className="container">
+            <Navbar />
             <h1 className="greeting">Hey there 👋 I'm</h1>
             <h1 className="text-white mb-20 text-4xl sm:text-5xl lg:text-6xl">
                 <span className="bg-clip-text ">{" "}</span>
@@ -57,10 +41,10 @@ const Sidebar = () => {
                     <span className="block bg-[white] hover:bg-custom-pink-800 rounded-full px-5 py-2">Download Resume</span> 
                 </button>
             </div>
-            <a href="#section1" className="navbar-link">About</a>
+            {/* <a href="#section1" className="navbar-link">About</a>
             <a href="#section2" className="navbar-link">Projects</a>
             <a href="#section3" className="navbar-link">Fun Facts</a>
-            <a href="#section4" className="navbar-link">Contact</a>
+            <a href="#section4" className="navbar-link">Contact</a> */}
 
         </div>
     </section>

@@ -17,10 +17,22 @@ module.exports = {
         'custom-green': '#68ecc0',
         'custom-pink': '#e41c6f',
         'custom-white': '#ffffff',
+        'custom-yellow': '#ffeaa7',
       },
 
       fontFamily: {
         lobster: ['lobster', 'cursive'],
+      },
+
+      screens: {
+        'sm': '576px',
+        // => @media (min-width: 576px) { ... }
+  
+        'md': '960px',
+        // => @media (min-width: 960px) { ... }
+  
+        'lg': '1440px',
+        // => @media (min-width: 1440px) { ... }
       },
     },
   },
