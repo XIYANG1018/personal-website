@@ -18,7 +18,7 @@ const ProjectCard = ({imgUrl, title, description, tag, tech} ) => {
                 </Link>
               </div>
               <div>
-                <h2 className='text-xl my-6 text-white'>{tech}</h2>
+                <h2 className=' text-sm md:text-xl my-6 text-white'>{tech}</h2>
               </div>
             </div>
             
