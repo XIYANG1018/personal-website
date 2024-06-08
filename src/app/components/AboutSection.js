@@ -58,6 +58,7 @@ const About = () => {
           <div className='flex justify-center items-center'>
             <Image 
                 src="/images/xiyang2.jpg"
+                alt='person image'
                 width={300}
                 height={300}
                 className='w-[200px] h-[200px] rounded-full md:w-[300px] md:h-[300px] mb-12 shadow-2xl'

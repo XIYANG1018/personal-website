@@ -10,7 +10,7 @@ const HeroSection = () => {
                 <div className="col-span-1 md:col-span-7 place-self-center text-center md:mt-16">
                     <h1 className="text-custom-pink font-lobster mb-8 mt-8 text-4xl md:text-5xl">
                         <span className="font-lobster bg-clip-text mb-8">
-                            Hey there 👋 I'm {" "}
+                            Hey there 👋 I&apos;m {" "}
                         </span>
                         <br></br>
               
