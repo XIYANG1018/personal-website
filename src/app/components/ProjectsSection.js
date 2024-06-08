@@ -41,7 +41,7 @@ const projectData = [
 
 const ProjectsSection = () => {
   return (
-    <div className='bg-[#eef] mt-0 px-20'>
+    <div className='bg-[#eef] mt-0 px-20 mb-8'>
         <h2 className='text-center text-4xl font-bold text-black my-12'>
             My Projects
         </h2>
