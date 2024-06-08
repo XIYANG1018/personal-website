@@ -9,4 +9,18 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: 'Jost';
+  src: url('/fonts/Jost.ttf') format('woff2');
+  /* 可以根据需要添加其他字体格式 */
+}
+
+
+@font-face {
+  font-family: 'Lobster';
+  src: url('/fonts/Lobster.ttf') format('woff2');
+  /* 可以根据需要添加其他字体格式 */
+}
+
+
 

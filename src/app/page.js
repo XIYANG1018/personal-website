@@ -4,6 +4,10 @@ import HeroSection from "./components/HeroSection";
 import ProjectsSection from "./components/ProjectsSection";
 import AboutSection from "./components/AboutSection";
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+</style>
+
 
 
 export default function Home() {

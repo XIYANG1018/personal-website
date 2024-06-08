@@ -21,7 +21,8 @@ module.exports = {
       },
 
       fontFamily: {
-        lobster: ['lobster', 'cursive'],
+        'lobster': ['Lobster', 'cursive'],
+        'jost': ['Jost', 'sans-serif'],
       },
 
       screens: {
