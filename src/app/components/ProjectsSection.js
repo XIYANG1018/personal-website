@@ -8,16 +8,19 @@ const projectData = [
         description: "Authentication and CRUD operations",
         image: "/images/article.png",
         tag: ["All", "Web"],
-        tech: "Java / Spring Boot / MySQL"
+        tech: "Java / Spring Boot / MySQL",
+        codeLink: "https://github.com/XIYANG1018/ArticleManagement",
+        
     },
 
     {
         id: 2,
-        title: "E-Commerce Microservices",
+        title: "Tickets App Microservices",
         description: "Leveraging an event bus enabling seamless communication",
         image: "/images/ecommerce-platform.jpg",
         tag: ["All", "Web"],
-        tech: "React / Express / Docker / Kubernetes"
+        tech: "React / Express.js / Docker / Kubernetes",
+        codeLink: "https://github.com/XIYANG1018/ticket-microservices"
     },
 
     {
@@ -26,17 +29,10 @@ const projectData = [
         description: "Asynchronous order processing and distributed locking mechanisms",
         image: "/images/ecommerce-microservices.jpg",
         tag: ["All", "Web"],
-        tech: "Redis / RabbitMQ / Java"
+        tech: "Redis / RabbitMQ / Java",
+        codeLink: "https://github.com/XIYANG1018/E-commerce"
     },
 
-    {
-        id: 4,
-        title: "Ticketing Mobile App",
-        description: "QR code scanning and secure payment gateways",
-        image: "/images/ticket.png",
-        tag: ["All", "Mobile"],
-        tech: "Flutter / React Native"
-    },
 ]
 
 const ProjectsSection = () => {
@@ -55,6 +51,7 @@ const ProjectsSection = () => {
                     imgUrl={project.image}
                     tag={project.tag}
                     tech={project.tech}
+                    codeLink={project.codeLink}
                 />
             ))}
         </div>

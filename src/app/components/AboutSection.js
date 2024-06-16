@@ -9,10 +9,8 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul>
-        <li><span className='text-custom-pink font-semibold'>Languages: </span>Java/Python/C/JavaScript</li>
-        <li><span className='text-custom-pink font-semibold'>Front-end Frameworks: </span>React/Next.js/Tailwind CSS</li>
-        <li><span className='text-custom-pink font-semibold'>Back-end: </span>SpringBoot/MySQL/Docker/Redis/Kubernetes</li>
-        <li><span className='text-custom-pink font-semibold'>Other: </span>AWS/Git</li>
+        <li><span className='text-custom-pink font-semibold'>Languages: </span>Java, Python, C/C++, JavaScript, SQL</li>
+        <li><span className='text-custom-pink font-semibold'>Frameworks & Tools: </span>SpringBoot, React.js, Node.js, MyBatis, MySQL, Redis, Docker, Kubernetes, AWS, GitS</li>
       </ul>
     )
   },
@@ -23,9 +21,9 @@ const TAB_DATA = [
     content: (
       <ul>
         <li>📍 Seattle, WA</li>
-        <li><span className='text-custom-pink font-semibold'>MS in Computer Science, Northeastern University</span></li>
+        <li><span className='text-custom-pink font-semibold'>MS in Computer Science with 4.0 GPA, Northeastern University</span></li>
         <li>📍 Peking, China</li>
-        <li>BA in Arabic Language and Literature, Peking University </li>
+        <li>BA in Arabic Language and Literature with 3.73 GPA, Peking University </li>
       </ul>
     )
   },
@@ -35,7 +33,6 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul>
-        <li><span className='text-custom-pink font-semibold'>AWS Certified Cloud Practitioner </span><em>Issued by Amazon Web Services Training and Certification</em></li>
         <li><span className='text-custom-pink font-semibold'>SQL</span> <em>certified by HackerRank</em></li>
         <li><span className='text-custom-pink font-semibold'>Professional Communication</span> <em>certified by Northeastern University</em></li>
       </ul>
@@ -72,7 +69,7 @@ const About = () => {
             </h2>
             <p className='text-base md:text-xl'>
               I am a full stack developer with a passion for developing seamless, scalable,
-              interactive and responsive web applications. I am currently pursuing Computer Science master at Northeastern Seattle campus and will be graduating Fall 2025/Spring 2026 with an overall 4.0/4.0 GPA.
+              interactive and responsive web applications. I am currently pursuing Computer Science master at Northeastern Seattle campus and will be graduating Spring 2026 with an overall 4.0/4.0 GPA.
                I am a <span className='text-custom-pink font-semibold'>quick learner </span> and <span className='text-custom-pink font-semibold'>team player</span>. I am actively searching an internship that I can learn from and contribute to.
             </p>
 
