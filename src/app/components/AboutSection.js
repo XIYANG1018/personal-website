@@ -10,7 +10,7 @@ const TAB_DATA = [
     content: (
       <ul>
         <li><span className='text-custom-pink font-semibold'>Languages: </span>Java, Python, C/C++, JavaScript, SQL</li>
-        <li><span className='text-custom-pink font-semibold'>Frameworks & Tools: </span>SpringBoot, React.js, Node.js, MyBatis, MySQL, Redis, Docker, Kubernetes, AWS, GitS</li>
+        <li><span className='text-custom-pink font-semibold'>Frameworks & Tools: </span>SpringBoot, React.js, Node.js, MyBatis, MySQL, Redis, Docker, Kubernetes, AWS, Git</li>
       </ul>
     )
   },
@@ -50,25 +50,21 @@ const About = () => {
     })
   }
   return (
-    <section className='bg-[#eef] pt-20'>
+    <section className='bg-[#eef] py-20'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-          <div className='flex justify-center items-center'>
-            <Image 
-                src="/images/xiyang2.jpg"
-                alt='person image'
-                width={300}
-                height={300}
-                className='w-[200px] h-[200px] rounded-full md:w-[300px] md:h-[300px] mb-12 shadow-2xl'
-              />
-          
-            
+          <div className='flex justify-center items-center flex-col text-4xl text-custom-pink mb-10'>
+            <p className='font-lobster'>I know</p>
+            <p className='font-lobster'>securing the first job</p>
+            <p className='font-lobster'>is difficult</p>
+            <p className='font-lobster'>but I&apos;m consistently</p>
+            <p className='font-lobster'>moving forward.</p>
           </div>
           <div>
             <h2 className='text-center text-4xl font-bold text-black mb-4'>
                 About Me
             </h2>
             <p className='text-base md:text-xl'>
-              I am a full stack developer with a passion for developing seamless, scalable,
+              I am a full-stack/backend developer with a passion for developing seamless, scalable,
               interactive and responsive web applications. I am currently pursuing Computer Science master at Northeastern Seattle campus and will be graduating Spring 2026 with an overall 4.0/4.0 GPA.
                I am a <span className='text-custom-pink font-semibold'>quick learner </span> and <span className='text-custom-pink font-semibold'>team player</span>. I am actively searching an internship that I can learn from and contribute to.
             </p>
