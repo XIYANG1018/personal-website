@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { Link as ScrollLink } from 'react-scroll';
 import confetti from "canvas-confetti";
 
-const RESUME_URL = 'http://localhost:3000/XiYang_resume.pdf';
+const RESUME_URL = 'https://personal-website-wheat-nine-27.vercel.app/XiYang_resume.pdf';
 
 const HeroSection = () => {
     const handleClick = () => {
