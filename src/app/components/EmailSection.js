@@ -6,8 +6,8 @@ import Image from "next/image"
 
 const EmailSection = () => {
   return (
-    <section className='grid md:grid-cols-2 my-12 mx-12 md:my-12 md:mx-16 py-24 gap-4'>
-      <div >
+    <div id='contact' className='grid md:grid-cols-2 my-12 mx-12 md:my-12 md:mx-16 py-24 gap-4'>
+      <div>
         <div className='flex md:items-start md:justify-start'>
             <Image 
                 src="/images/xiyang2.jpg"
@@ -54,7 +54,7 @@ const EmailSection = () => {
             <button type='submit' className='bg-custom-pink text-white font-medium py-2.5 px-5 rounded-lg w-full'>Send Message</button>
         </form>
       </div>
-    </section>
+    </div>
   )
 }
 

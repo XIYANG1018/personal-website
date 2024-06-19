@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { Link as ScrollLink } from 'react-scroll';
 
 const HeroSection = () => {
     return (
@@ -32,7 +33,10 @@ const HeroSection = () => {
                     </h1>
 
                     <div className="button-container">
-                        <button className="text-lg px-6 py-3 rounded-full mr-4 mb-4 bg-gradient-to-br from-custom-green via-custom-pink to-custom-white hover:bg-slate-200 text-white">Hire Me</button>
+                        <ScrollLink to='contact' spy={true} smooth={true} offset={50} duration={500}>
+                            <button className="text-lg px-6 py-3 rounded-full mr-4 mb-4 bg-gradient-to-br from-custom-green via-custom-pink to-custom-white hover:bg-slate-200 text-white">Hire Me</button>
+                        </ScrollLink>
+                        
                         <button className="text-lg px-1 py-1 rounded-full mr-4 mb-4 bg-#e41c6f hover:bg-pink-400 text-black">
                             <span className="block bg-[white] hover:bg-custom-pink-800 rounded-full px-5 py-2">Download Resume</span> 
                         </button>
