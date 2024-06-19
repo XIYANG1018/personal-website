@@ -26,12 +26,12 @@ const projectData = [
 
     {
         id: 3,
-        title: "E-Commerce Platform",
+        title: "Brewtopia Coffee Lab",
         description: "Asynchronous order processing and distributed locking mechanisms",
-        image: "/images/ecommerce-microservices.jpg",
+        image: "/images/coffeeLab.png",
         tag: ["All", "Web"],
         tech: "Redis / RabbitMQ / Java",
-        codeLink: "https://github.com/XIYANG1018/E-commerce"
+        codeLink: "https://github.com/XIYANG1018/Brewtopia-Coffee-Lab"
     },
 
 ]
