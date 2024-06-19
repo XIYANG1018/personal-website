@@ -5,12 +5,25 @@ import { TypeAnimation } from "react-type-animation";
 import { Link as ScrollLink } from 'react-scroll';
 import confetti from "canvas-confetti";
 
+const RESUME_URL = 'http://localhost:3000/XiYang_resume.pdf';
+
 const HeroSection = () => {
     const handleClick = () => {
         document.getElementsByClassName("confetti-button")[0].addEventListener("click", () => {
             confetti();
         })
     }
+
+    const downloadFileAtUrl = (url)=> {
+        const aTag = document.createElement('a');
+        const fileName = 'Xi_Yang_Resume.pdf';
+        aTag.href = url;
+        aTag.setAttribute('download', fileName);
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+    }
+
     return (
         <section>
             <div className="grid grid-cols-1 md:grid-cols-12 bg-[#eef] md:h-96">
@@ -46,9 +59,16 @@ const HeroSection = () => {
                             >Hire Me</button>
                         </ScrollLink>
                         
-                        <button className="text-lg px-1 py-1 rounded-full mr-4 mb-4 bg-#e41c6f hover:bg-pink-400 text-black">
+                       
+                        <button
+                            className="text-lg px-1 py-1 rounded-full mr-4 mb-4 bg-#e41c6f hover:bg-pink-400 text-black"
+                            onClick={() => {downloadFileAtUrl(RESUME_URL)}}>
                             <span className="block bg-[white] hover:bg-custom-pink-800 rounded-full px-5 py-2">Download Resume</span> 
                         </button>
+
+                        
+               
+                        
                     </div>
                     
                     
