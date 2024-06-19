@@ -9,7 +9,7 @@ const RESUME_URL = 'https://personal-website-wheat-nine-27.vercel.app/XiYang_res
 
 const HeroSection = () => {
     const handleClick = () => {
-        document.getElementsByClassName("confetti-button")[0].addEventListener("click", () => {
+        document.getElementsByClassName("confetti-button").addEventListener("click", () => {
             confetti();
         })
     }
@@ -52,10 +52,10 @@ const HeroSection = () => {
                     </h1>
 
                     <div className="button-container">
-                        <ScrollLink to='contact' spy={true} smooth={true} offset={50} duration={500}>
+                        <ScrollLink to='contact' spy={true} smooth={true} offset={50} duration={500} onClick={handleClick}>
                             <button 
                             className="confetti-button text-lg px-6 py-3 rounded-full mr-4 mb-4 bg-gradient-to-br from-custom-green via-custom-pink to-custom-white hover:bg-slate-200 text-white"
-                            onClick={handleClick}
+                            
                             >Hire Me</button>
                         </ScrollLink>
                         
