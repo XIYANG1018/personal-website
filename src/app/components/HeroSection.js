@@ -52,12 +52,12 @@ const HeroSection = () => {
                     </h1>
 
                     <div className="button-container">
-                        
-                        <button onClick={handleClick}
-                        className="confetti-button text-lg px-6 py-3 rounded-full mr-4 mb-4 bg-gradient-to-br from-custom-green via-custom-pink to-custom-white hover:bg-slate-200 text-white">
-                            <ScrollLink to='contact' spy={true} smooth={true} offset={50} duration={500} >Hire Me</ScrollLink>
-                        </button>
-                        
+                        <ScrollLink to='contact' spy={true} smooth={true} offset={50} duration={500} >
+                            <button 
+                            className="confetti-button text-lg px-6 py-3 rounded-full mr-4 mb-4 bg-gradient-to-br from-custom-green via-custom-pink to-custom-white hover:bg-slate-200 text-white"
+                            onClick={handleClick}
+                            >Hire Me</button>
+                        </ScrollLink>
                         
                        
                         <button
