@@ -51,8 +51,8 @@ const HeroSection = () => {
                         />
                     </h1>
 
-                    <div className="button-container">
-                        <ScrollLink to='contact' spy={true} smooth={true} offset={50} duration={500} onClick={handleClick}>
+                    <div className="button-container" onClick={handleClick}>
+                        <ScrollLink to='contact' spy={true} smooth={true} offset={50} duration={500} >
                             <button 
                             className="confetti-button text-lg px-6 py-3 rounded-full mr-4 mb-4 bg-gradient-to-br from-custom-green via-custom-pink to-custom-white hover:bg-slate-200 text-white"
                             
