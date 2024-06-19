@@ -3,8 +3,14 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { Link as ScrollLink } from 'react-scroll';
+import confetti from "canvas-confetti";
 
 const HeroSection = () => {
+    const handleClick = () => {
+        document.getElementsByClassName("confetti-button")[0].addEventListener("click", () => {
+            confetti();
+        })
+    }
     return (
         <section>
             <div className="grid grid-cols-1 md:grid-cols-12 bg-[#eef] md:h-96">
@@ -34,7 +40,10 @@ const HeroSection = () => {
 
                     <div className="button-container">
                         <ScrollLink to='contact' spy={true} smooth={true} offset={50} duration={500}>
-                            <button className="text-lg px-6 py-3 rounded-full mr-4 mb-4 bg-gradient-to-br from-custom-green via-custom-pink to-custom-white hover:bg-slate-200 text-white">Hire Me</button>
+                            <button 
+                            className="confetti-button text-lg px-6 py-3 rounded-full mr-4 mb-4 bg-gradient-to-br from-custom-green via-custom-pink to-custom-white hover:bg-slate-200 text-white"
+                            onClick={handleClick}
+                            >Hire Me</button>
                         </ScrollLink>
                         
                         <button className="text-lg px-1 py-1 rounded-full mr-4 mb-4 bg-#e41c6f hover:bg-pink-400 text-black">

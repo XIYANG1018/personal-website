@@ -3,6 +3,7 @@ import React, { useState, useTransition } from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton'
 
+
 const TAB_DATA = [
   {
     title: "Skills",
@@ -50,7 +51,7 @@ const About = () => {
     })
   }
   return (
-    <section className='bg-[#eef] py-20'>
+    <section id='about' className='bg-[#eef] py-20'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
           <div className='flex justify-center items-center flex-col text-4xl text-custom-pink mb-10'>
             <p className='font-lobster'>I know</p>

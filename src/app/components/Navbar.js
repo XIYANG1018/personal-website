@@ -1,6 +1,6 @@
 "use client"
 import React, { useCallback, useState } from "react";
-
+import { Link as ScrollLink } from 'react-scroll';
 
 // const navLinks = [
 //     {
@@ -43,18 +43,18 @@ const Navbar = () => {
 
                     <div className="hidden md:block">
                         <div className="ml-4 flex items-center space-x-4">
-                            <a href="/"
+                            <ScrollLink to='about' spy={true} smooth={true} offset={50} duration={500}
                             className="text-white hover:bg-white hover:text-black rounded-lg p-2">
                                 About
-                            </a>
-                            <a href="/"
+                            </ScrollLink>
+                            <ScrollLink to='projects' spy={true} smooth={true} offset={50} duration={500}
                             className="text-white hover:bg-white hover:text-black rounded-lg p-2">
                                 Projects
-                            </a>
-                            <a href="/"
+                            </ScrollLink>
+                            <ScrollLink to='contact' spy={true} smooth={true} offset={50} duration={500}
                             className="text-white hover:bg-white hover:text-black rounded-lg p-2">
                                 Contact
-                            </a>
+                            </ScrollLink>
                         </div>
                     </div>
 
