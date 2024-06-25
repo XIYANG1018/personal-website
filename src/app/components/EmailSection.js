@@ -7,7 +7,7 @@ import Image from "next/image"
 
 const EmailSection = () => {
   const handleSubmit = async (e) => {
-    e.preventDefault(); // // 阻止表单默认提交行为
+    e.preventDefault(); //阻止表单默认提交行为
 
     // 从事件对象中获取表单数据
     const data = {
@@ -16,6 +16,8 @@ const EmailSection = () => {
       message: e.target.message.value,
       name: e.target.name.value,
     }
+
+    console.log('Form data:', data);
 
     // 将数据转换为 JSON 格式
     const JSONdata = JSON.stringify(data);
