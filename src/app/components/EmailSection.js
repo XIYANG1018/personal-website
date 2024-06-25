@@ -1,11 +1,12 @@
 "use client";
-import React from 'react'
+import React, { useState } from 'react'
 import GithubIcon from "../../../public/brands-github.svg"
 import LinkedInIcon from '../../../public/brands-linkedin-in.svg'
 import Link from "next/link"
 import Image from "next/image"
 
 const EmailSection = () => {
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault(); //阻止表单默认提交行为
 
@@ -37,9 +38,10 @@ const EmailSection = () => {
     // 解析 JSON 响应数据
 
     const resData = await response.json();
-    console.log(resData);
+
     if (response.status === 200) {
       console.log("Message sent.");
+      setEmailSubmitted(true);
     }
   }
 
@@ -94,6 +96,11 @@ const EmailSection = () => {
                 <textarea name='message' id='message' required placeholder='Hello Xi...' className='border-[#33353F] placeholder-[#9CA2A9]s text-gray-500 w-full'/>
             </div>
             <button type='submit' className='bg-custom-pink text-white font-medium py-2.5 px-5 rounded-lg w-full'>Send Message</button>
+            {
+              emailSubmitted && (
+                <p className='text-green-600 font-bold text-xl'>Message sent successfully!</p>
+              )
+            }
         </form>
       </div>
     </div>
