@@ -1,5 +1,5 @@
 "use client"
-import React from "react";
+import React, { useState }  from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { Link as ScrollLink } from 'react-scroll';
@@ -8,21 +8,44 @@ import confetti from "canvas-confetti";
 const RESUME_URL = 'https://personal-website-wheat-nine-27.vercel.app/XiYang_resume.pdf';
 
 const HeroSection = () => {
-    const handleClick = () => {
-        document.getElementsByClassName("confetti-button").addEventListener("click", () => {
-            confetti();
-        })
-    }
+    const [showConfetti, setShowConfetti] = useState(false);
 
-    const downloadFileAtUrl = (url)=> {
-        const aTag = document.createElement('a');
-        const fileName = 'Xi_Yang_Resume.pdf';
-        aTag.href = url;
-        aTag.setAttribute('download', fileName);
-        document.body.appendChild(aTag);
-        aTag.click();
-        aTag.remove();
-    }
+    // 这种方法会让confetti效果滞后一次点击
+    // 点击 -> 添加事件 -> 点击 -> 效果生效
+    // const handleClick = () => {
+    //     document.getElementsByClassName("confetti-button")[0].addEventListener("click", () => {
+    //         confetti();
+    //     })
+    // }
+    const handleClick = () => {
+        setShowConfetti(true);
+        confetti(); // 在这里直接触发 confetti 效果
+    };
+
+    // const downloadFileAtUrl = (url)=> {
+    //     const aTag = document.createElement('a');
+    //     const fileName = 'Xi_Yang_Resume.pdf';
+    //     aTag.href = url;
+    //     aTag.setAttribute('download', fileName);
+    //     document.body.appendChild(aTag);
+    //     aTag.click();
+    //     aTag.remove();
+    // }
+
+    const downloadFileAtUrl = (url) => {
+        fetch(url)
+            .then(response => response.blob())
+            .then(blob => {
+                const url = window.URL.createObjectURL(new Blob([blob]));
+                const aTag = document.createElement('a');
+                aTag.href = url;
+                aTag.setAttribute('download', 'Xi_Yang_Resume.pdf');
+                document.body.appendChild(aTag);
+                aTag.click();
+                aTag.remove();
+            })
+            .catch(error => console.error('Error downloading file:', error));
+    };
 
     return (
         <section>
