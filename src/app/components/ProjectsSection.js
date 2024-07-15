@@ -11,6 +11,7 @@ const projectData = [
         tag: ["All", "Web"],
         tech: "Java / Spring Boot / MySQL",
         codeLink: "https://github.com/XIYANG1018/ArticleManagement",
+        deployLink: '/'
         
     },
 
@@ -21,17 +22,30 @@ const projectData = [
         image: "/images/ecommerce-platform.jpg",
         tag: ["All", "Web"],
         tech: "React / Express.js / Docker / Kubernetes",
-        codeLink: "https://github.com/XIYANG1018/ticket-microservices"
+        codeLink: "https://github.com/XIYANG1018/ticket-microservices",
+        deployLink: '/'
     },
 
     {
         id: 3,
-        title: "Brewtopia Coffee Lab",
+        title: "Brewtopia Coffee Lab Full Stack Application",
         description: "Asynchronous order processing and distributed locking mechanisms",
         image: "/images/coffeeLab.png",
         tag: ["All", "Web"],
         tech: "Redis / RabbitMQ / Java",
-        codeLink: "https://github.com/XIYANG1018/Brewtopia-Coffee-Lab"
+        codeLink: "https://github.com/XIYANG1018/Brewtopia-Coffee-Lab",
+        deployLink: '/'
+    },
+
+    {
+        id: 4,
+        title: "The Pain Cognition and Modulation Laboratory",
+        description: "The official website for teh PCML lab",
+        image: "/images/lab.png",
+        tag: ["All", "Web"],
+        tech: "Redis / RabbitMQ / Java",
+        codeLink: "https://github.com/XIYANG1018/PCML-Website",
+        deployLink: "https://www.pcml.online/"
     },
 
 ]
@@ -53,6 +67,7 @@ const ProjectsSection = () => {
                     tag={project.tag}
                     tech={project.tech}
                     codeLink={project.codeLink}
+                    deployLink={project.deployLink}
                 />
             ))}
         </div>
