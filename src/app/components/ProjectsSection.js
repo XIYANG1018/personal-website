@@ -34,7 +34,7 @@ const projectData = [
         tag: ["All", "Web"],
         tech: "Redis / RabbitMQ / Java",
         codeLink: "https://github.com/XIYANG1018/Brewtopia-Coffee-Lab",
-        deployLink: '/'
+        deployLink: 'https://brewtopia-coffee-lab.onrender.com/'
     },
 
     {
