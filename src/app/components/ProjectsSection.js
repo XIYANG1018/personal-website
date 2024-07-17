@@ -42,7 +42,7 @@ const projectData = [
         description: "The official website for teh PCML lab",
         image: "/images/lab.png",
         tag: ["All", "Web"],
-        tech: "Redis / RabbitMQ / Java",
+        tech: "React / Bootstrap",
         codeLink: "https://github.com/XIYANG1018/PCML-Website",
         deployLink: "https://www.pcml.online/"
     },
