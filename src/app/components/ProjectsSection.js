@@ -29,10 +29,9 @@ const projectData = [
     {
         id: 3,
         title: "Brewtopia Coffee Lab Full Stack Application",
-        description: "Asynchronous order processing and distributed locking mechanisms",
-        image: "/images/coffeeLab.png",
+        description: "Order processing, Paypal API, User authentication, Admin functionalities",
         tag: ["All", "Web"],
-        tech: "Redis / RabbitMQ / Java",
+        tech: "MongoDB / Express / React / Node.js",
         codeLink: "https://github.com/XIYANG1018/Brewtopia-Coffee-Lab",
         deployLink: 'https://brewtopia-coffee-lab.onrender.com/'
     },
