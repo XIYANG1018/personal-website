@@ -30,7 +30,7 @@ const projectData = [
         id: 3,
         title: "Brewtopia Coffee Lab Full Stack Application",
         description: "Order processing, Paypal API, User authentication, Admin functionalities",
-        image: "/images/brewtopia.png",
+        image: "/images/coffeeLab.png",
         tag: ["All", "Web"],
         tech: "MongoDB / Express / React / Node.js",
         codeLink: "https://github.com/XIYANG1018/Brewtopia-Coffee-Lab",
